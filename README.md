@@ -1,8 +1,8 @@
 Zum Installieren des moduls bitte folgende untere Befehle ausführen.
 
-`composer config repositories.n98 github https://github.com/benny-1809/blog.git`
+`composer config repositories.n98 github https://github.com/benny-1809/n98.git`
 
-`composer require benny-1809/blog:dev-master`
+`composer require benny-1809/n98:dev-master`
 
 `bin/magento setup:upgrade`
 

@@ -7,7 +7,7 @@ Zum Installieren des moduls bitte folgende untere Befehle ausführen.
 `bin/magento setup:upgrade`
 
 ### Falls kein Grunt oder Gulp auf dem System vorhanden ist, bitte im Developer-Mode folgende folder löschen
-`rm rf var/view_preprocessed pub/static/frontend`
+`rm -rf var/view_preprocessed pub/static/frontend`
 
 ### Im Production-Mode bitte den static-content deployen für das greifen des _module.less files
 `bin/magento setup:static-content:deploy -j2 en_US de_DE`

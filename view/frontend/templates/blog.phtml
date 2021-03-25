@@ -1,0 +1,29 @@
+<?php
+    $data = $block->getBlogPreviewData();
+?>
+<!-- Just a little image for more comfort feeling -->
+<header class="blog-logo">
+    <img src="<?php echo $block->getViewFileUrl("Benny_Blog::images/n98.jpg"); ?>" alt="n98-logo" />
+</header>
+<div class="blog-container">
+    <div id="blog-preview">
+        <?php foreach($data as $index => $blogPost): ;?>
+            <div class="blog-post">
+                <img class="blog-image" src="<?php echo $blogPost["image"]; ?>"/>
+                <a class="blog-title" data-id="<?php echo $index; ?>" href="<?php echo $blogPost["url"]; ?>">
+                    <?php echo $blogPost["title"]; ?>
+                </a>
+                <div class="meta-data">
+                    <i class="fa fa-calendar"></i>
+                    <span class="blog-date"><?php echo $blogPost["date"]; ?></span>
+                    <i class="fa fa-user"></i>
+                    <div class="blog-author"><?php echo $blogPost["author"]; ?></div>
+                    <i class="fa fa-comments"></i>
+                    <div class="blog-comments"><?php echo $blogPost["comments"]; ?></div>
+                </div>
+                <div class="blog-description"><?php echo $blogPost["description"]; ?></div>
+                <div class="blog-article"></div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>

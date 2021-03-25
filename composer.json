@@ -1,0 +1,20 @@
+{
+    "name": "benny-1809/blog",
+    "description": "N98 Blog fetcher",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Benny\\Blog\\": ""
+        }
+    }
+}
